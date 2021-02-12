@@ -32,7 +32,7 @@ class QueueInsertException extends RuntimeException {
  */
 class QueueDeleteException extends RuntimeException {
   public QueueDeleteException() {
-    super("Can't delete the last item from an empty queue");
+    super("Can't delete the front item from an empty queue");
   }
 }
 
@@ -44,7 +44,7 @@ class QueueDeleteException extends RuntimeException {
  */
 class QueueReadException extends RuntimeException {
   public QueueReadException() {
-    super("Can't read the last item from an empty queue");
+    super("Can't read the front item from an empty queue");
   }
 }
 
